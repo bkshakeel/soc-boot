@@ -11,18 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication  {
 
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-/*	@Override
-	public void run(String... args) throws Exception {
-
-		employeeMyBatisMapper.findAllEmployees().forEach(x->{
-			logger.info("Student id 10001 -> {}",x.getFirstName() );
-		});
-
-	}*/
 }

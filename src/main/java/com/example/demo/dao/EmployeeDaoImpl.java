@@ -37,7 +37,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
             employeeMyBatisMapper.saveEmployee(employee);
         }
         catch (Exception e) {
-            throw new RuntimeException("");
+            throw new RuntimeException("unable to save");
         }
+    }
+
+    public void setEmployeeMyBatisMapper(EmployeeMyBatisMapper employeeMyBatisMapper) {
+        this.employeeMyBatisMapper = employeeMyBatisMapper;
     }
 }

@@ -37,8 +37,11 @@ public class EmployeeController {
             return Response.status(201).entity("created").build();
         }
         catch (RuntimeException e){
-            return Response.status(404).entity(e.getMessage()).build();
+            return Response.status(400).entity(e.getMessage()).build();
         }
     }
 
+    public void setEmployeeService(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
 }
